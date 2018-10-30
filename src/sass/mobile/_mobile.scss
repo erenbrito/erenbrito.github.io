@@ -262,8 +262,15 @@ html {
 
 				.curiosidades {
 					.container {
+						.conteudo-wp {
+							P {
+								a {
+									font-size: 14px;
+								}
+							}
+						}
 						.conteudo-wp2 {
-							padding-left: 0;
+							padding-left: 10px;
 							.bloco {
 								font-size: 14px;
 							}
