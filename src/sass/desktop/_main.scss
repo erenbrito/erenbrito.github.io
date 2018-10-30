@@ -1,0 +1,468 @@
+/** GERAL **/
+
+.active {
+	color: $cor-branca !important;
+		&:after {
+			content: "";
+			width: 100% !important;
+			height: 2px;
+			margin: 0 auto;
+			background: $cor-azul;
+			transition: all 500ms ease;
+			display: block;
+		}
+}
+
+.logo-mobile {
+	display: none;
+}
+p {
+	font-size: 17px;
+}
+
+.titulo {
+	font-size: 40px;
+	color: $cor-branca;
+	text-transform: uppercase;
+	@include font1-bold();
+}
+
+.titulo1 {
+	font-size: 30px;
+	color: $cor-branca;
+	text-transform: uppercase;
+	@include font1-bold();
+	padding: 60px 0 15px 20px;
+	border-left: 3px solid #fff;
+	border-radius: 0 25px;
+}
+
+.titulo2 {
+	font-size: 35px;
+	color: $cor-12;
+	text-transform: uppercase;
+}
+
+.clear {
+	clear: both;
+}
+
+.typed-cursor.typed-cursor--blink {
+	display: none !important;
+}
+
+
+
+/*home*/
+main.home {
+	.banner {
+		height: 550px;
+		position: relative;
+		.img-wp {
+			display: block;
+			width: 100%;
+			height: 550px;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			filter: brightness(30%);
+		}
+		.gif {
+			position: absolute;
+			top: 140px;
+			left: 230px;
+			height: 370px;
+		}
+		.icone-chave {
+			position: absolute;
+			top: 130px;
+			right: 52%;
+			color: $cor-azul;
+			font-size: 250px;
+			-webkit-animation: aberturaChave1 1s ease-in-out;
+			-moz-animation: aberturaChave1 1s ease-in-out;
+			-o-animation: aberturaChave1 1s ease-in-out;
+			animation: aberturaChave1 1s ease-in-out;
+		}
+		.icone-chave2 {
+			position: absolute;
+			top: 130px;
+			right: 24%;
+			color: $cor-azul;
+			font-size: 250px;
+			-webkit-animation: aberturaChave2 1s ease-in-out;
+			-moz-animation: aberturaChave2 1s ease-in-out;
+			-o-animation: aberturaChave2 1s ease-in-out;
+			animation: aberturaChave2 1s ease-in-out;
+		}
+
+		.conteudo-wp {
+			position: absolute;
+			top: 200px;
+			right: 18%;
+			width: 34%;
+			
+			.titulo {
+				max-width: 280px;
+				font-size: 48px;
+				color: $cor-branca;
+				text-transform: initial;
+				@include font1-bold();
+				line-height: 46px;
+				margin-bottom: 20px;
+				strong {
+					color: $cor-amarela;
+				}
+			}
+			.subtitulo {
+				font-size: 40px;
+				color: $cor-branca;
+				text-transform: initial;
+				@include font1-bold();
+				line-height: 46px;
+				max-width: 320px;
+			}
+		}
+	}
+
+	.about-me {
+		height: auto;
+		position: relative;
+
+		.bg-skew {
+			transform: skewY(-8deg);
+			transform-origin: 0;
+			position: absolute;
+			z-index: -1;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			display: block;
+			background: $cor-grafite;
+		}
+		.container {
+			.conteudo-wp {
+				margin: 30px 0;
+				p {
+					font-size: 19px;
+					color: $cor-branca;
+					@include font1-italic;
+				}
+			}
+			.imagem {
+				margin-left: 50px;
+				position: relative;
+				top: 40px;
+				.img-wp {
+					display: block;
+					width: 100%;
+					height: 400px;
+					background-position: center center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					border: 25px solid $cor-azul;
+					transform: scale(1) perspective(1040px) rotateY(-11deg) rotateX(2deg) rotate(2deg);
+					box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+				}
+			}
+		}
+	}
+
+	.skills {
+		padding-bottom: 50px;
+		.container {
+			.conteudo-wp {
+				margin: 30px 0;
+				P {
+					font-size: 19px;
+					color: $cor-branca;
+					@include font1-italic;
+				}
+			}
+			.grafico {
+				.info {
+					margin-left: 30px;
+					margin-bottom: 13px;
+					.bloco-skills {
+						display: inline-flex;
+						margin-bottom: 10px;
+						.icone {
+							display: block;
+						}
+						.texto {
+							@include font1-bold;
+							font-size: 17px;
+							color: $cor-branca;
+							display: flex;
+							align-items: center;
+							margin-left: 5px;
+						}
+					}
+
+					.numero {
+						float: right;
+						.counter {
+							@include font1-bold;
+							color: $cor-branca;
+							font-size: 15px;
+						}
+						.porcentagem {
+							@include font1-bold;
+							color: $cor-branca;
+							font-size: 15px;
+						}
+					}
+					
+					.bloco {
+						height: 5px;
+						width: 100%;
+						background: $cor-grafite;
+						display: block;
+						a {
+							height: 5px;
+							background: $cor-azul;
+							display: block;
+							transition: all 500ms ease;
+						}
+						.contador {
+							transition: width ease 2s;
+						 
+							&.inativo {
+							  width: 0px !important;
+							}
+						 }
+					}
+				}
+			}
+		}
+	}
+	
+	.portfolio {
+		background: $cor-grafite;
+		height: auto;
+		.conteudo-wp {
+			margin: 30px 0;
+			p {
+				text-align: center;
+				font-size: 19px;
+				color: $cor-branca;
+				@include font1-italic;
+				margin-bottom: 10px;
+			}
+		}
+		.recent-works {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 10px 0;
+			justify-content: space-around;
+			
+			.bloco {
+				width: 30%;
+				position: relative;
+				margin-bottom: 30px;
+				box-shadow: 2px 10px 25px $cor-preta;
+				.img-wp {
+					display: block;
+					width: 100%;
+					height: 220px;
+					background-position: top center;
+					background-repeat: no-repeat;
+					background-size: cover;
+					transition: all 500ms ease;
+					&:hover {
+						border-radius: 4%;
+						-webkit-transform: scale(1.1);
+						-ms-transform: scale(1.1);
+						transform: scale(1.1);
+					}
+					span {
+						background: transparent;
+						transition: all 500ms ease;
+						border-radius: 50%;
+						width: 100%;
+						height: 100%;
+						text-align: center;
+						display: flex;
+						flex-direction: column;
+						align-items: center;
+						justify-content: center;
+						p {
+							color: transparent;
+							transition: all 100ms ease;
+							display: flex;
+							justify-content: space-around;
+							align-items: center;
+							width: 100%;
+						}
+						button {
+							color: $cor-branca;
+							border: none;
+							background: $cor-azul;
+							transition: all 500ms ease;
+							display: none;
+							@include font1-italic;
+							font-size: 18px;
+							border-radius: 15px;
+							margin-top: 20px;
+							height: 30px;
+							width: 105px;
+							cursor: pointer;
+						}
+
+					}
+					&:hover span {
+						position: absolute;
+						background: $cor-amarela;
+						width: 100%;
+						height: 100%;
+						top: 0;
+						left: 0;
+						border-radius: 4%;
+						transition: all 500ms ease;
+						p {
+							color: $cor-fundo;
+							padding: 0 10px;
+							@include font1-italic;
+							font-size: 18px;
+							&:first-child {
+								font-weight: bold;
+							}
+							strong {
+								font-size: 20px;
+								margin: 20px 0;
+								@include font1-bold;
+							}
+						}
+						button {
+							display: inherit;
+							&:hover {
+								background: $cor-rosa;
+							}
+						}
+					}
+				}
+				
+			}
+		}
+		
+	}
+
+	.curiosidades {
+		.conteudo-wp {
+			margin: 30px 0;
+			P {
+				text-align: center;
+				font-size: 19px;
+				color: $cor-branca;
+				@include font1-italic;
+				a {
+					text-align: center;
+					font-size: 19px;
+					color: $cor-6;
+					@include font1-italic;
+				}
+			}
+		}
+
+		.conteudo-wp2 {
+			margin: 30px 0 50px;
+			padding-left: 70px;
+			.bloco {
+				@include font1-bold;
+				color: $cor-azul;
+				display: flex;
+				margin-bottom: 8px;
+				font-size: 19px;
+				&:before {
+					content: '';
+					background-image: url(../img/icon1.png);
+					display: block;
+					width: 9%;
+					height: 20px;
+					background-position: center;
+					background-repeat: no-repeat;
+					background-size: contain;
+				}
+			}
+			
+		}
+	}
+}
+
+@-webkit-keyframes aberturaChave1 {
+    0% { right: 41%; }
+    100% { right: 52%; } 
+}
+@-moz-keyframes aberturaChave1 {
+    0% { right: 41%;}
+    100% { right: 52%; }
+}
+@-o-keyframes aberturaChave1 {
+    0% { right: 41%; }
+    100% { right: 52%; }
+}
+@keyframes aberturaChave1 {
+    0% { right: 41%; }
+    100% { right: 52%; }
+}
+
+@-webkit-keyframes aberturaChave2 {
+    0% { right: 35%; }
+    100% { right: 24%; } 
+}
+@-moz-keyframes aberturaChave2 {
+    0% { right: 35%;}
+    100% { right: 24%; }
+}
+@-o-keyframes aberturaChave2 {
+    0% { right: 35%; }
+    100% { right: 24%; }
+}
+@keyframes aberturaChave2 {
+    0% { right: 35%; }
+    100% { right: 24%; }
+}
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes blink {
+	0% {
+	  color: #1c1c1c;
+	  transform: scale(1);
+	}
+	
+	50% {
+	  color: #28a9e1;
+	  transform: scale(1.2);
+	}
+	
+	100% {
+	  color: #1c1c1c;
+	  transform: scale(1);
+	}
+  }
+
+.fadeIn {
+    -webkit-animation: fadeIn 1s ease-in-out;
+    -moz-animation: fadeIn 1s ease-in-out;
+    -o-animation: fadeIn 1s ease-in-out;
+    animation: fadeIn 1s ease-in-out;
+}
+
+

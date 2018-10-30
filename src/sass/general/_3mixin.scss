@@ -1,0 +1,21 @@
+/****************************/
+/** Mixin **/
+/****************************/
+
+@mixin form-input($fsize: 14px, $cor: $cor-branca) {
+	@include font1-light();
+	font-size: $fsize;
+	color:$cor;
+}
+
+@mixin form-input-1($fsize: 14px, $cor: $cor-preta) {
+    @include font1-bold();
+	font-size: $fsize;
+	color:$cor;
+}
+
+@mixin box-sizing() {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

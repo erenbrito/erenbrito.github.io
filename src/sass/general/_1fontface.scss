@@ -1,0 +1,11 @@
+/****************************/
+/** Font-Face **/  
+/****************************/
+
+
+
+@mixin font1-italic() 			{ font-family: 'Open Sans Condensed';  font-weight: 300; 	font-style: italic; }
+
+@mixin font1-light() 			{ font-family: 'Open Sans Condensed';  font-weight: 300; 	font-style: normal; }
+
+@mixin font1-bold() 			{ font-family: 'Open Sans Condensed';  font-weight: bold; 	font-style: normal; }

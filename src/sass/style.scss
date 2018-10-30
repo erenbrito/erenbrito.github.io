@@ -1,0 +1,75 @@
+// Import Fontface
+@import 'general/1fontface';
+
+// Import Cores
+@import 'general/2cores';
+
+// Import Mixin
+@import 'general/3mixin';
+
+// Import General
+@import 'general/4general';
+
+// /****************************/
+// /** HTML **/
+// /****************************/
+
+// Import Desktop
+@import 'desktop/desktop';
+
+// Import Mobileeee
+@import 'mobile/mobile';
+
+//@include font1-regular();
+//@include font1-bold();
+// Univers | font-family: 'Univers'; font-weight: normal; font-style: normal;
+// UniversCondensed-Bold | font-family: 'Univers Condensed'; font-weight: bold; font-style: normal;
+
+/*
+
+input, textarea
+{
+	width: 100%;
+	margin-bottom: .3em;
+	border: solid 1px $cor-cinza-D2;
+	color: $cor-preta;
+
+	&:focus
+	{
+		outline: none;
+	}
+	&::placeholder {
+			@include form-input(1.2rem, $cor-cinza-D2);
+		}
+		&::-webkit-input-placeholder {
+			@include form-input(1.2rem, $cor-cinza-D2);
+		}
+		&::-moz-placeholder {
+			@include form-input(1.2rem, $cor-cinza-D2);
+		}
+		&:-ms-input-placeholder {
+			@include form-input(1.2rem, $cor-cinza-D2);
+		}
+		&:-moz-placeholder {
+			@include form-input(1.2rem, $cor-cinza-D2);
+		}
+}
+
+*/
+
+/* 
+position:;
+top:;
+left:;
+float:;
+clear:;
+display:;
+width:;
+height:;
+margin:;
+padding:;
+border:;
+background:;
+font:;
+text:;
+color:; */

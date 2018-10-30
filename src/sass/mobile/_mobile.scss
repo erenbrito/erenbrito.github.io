@@ -1,0 +1,313 @@
+html {
+    & > body {
+		@media(max-width: 1199px) {
+
+		}
+
+        @media(max-width: 991px) {
+			&.menu-aberto {
+				main {
+					//filter: blur(2px);
+					transform: translateX(170px);
+					transition: all 500ms ease;
+					opacity: 0.5;
+				}
+					.topo {
+						background: $cor-grafite !important;
+						height: 45px !important;
+					}
+
+			} 
+			.titulo1 {
+				font-size: 20px;
+				padding: 30px 0 15px 20px;
+			}
+			p {
+				font-size: 14px !important;
+			}
+			&.home {
+                .topo.transparent {
+					transition: all 500ms ease;
+                    background: transparent;
+            	}
+			}
+			.container-menu {
+				display: block !important;
+				position: relative;
+				width: 30px;
+				height: 22px;
+				cursor: pointer;
+				margin-right: 10px;
+			}
+			  
+			#menu { 
+				display: none;
+			}
+			
+			.menu-button {
+				width: 100%;
+				height: 5px;
+				background-color: $cor-azul;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				transition: all .5s ease-in-out;
+				border-radius: 0px 5px 5px 0px;
+			}
+			
+			.menu-button:before, .menu-button:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				width: 100%;
+				height: 5px;
+				background-color: $cor-azul;
+				transition: all .5s ease-in-out;
+				border-radius: 0px 5px 5px 0px;
+			} 
+			
+			.menu-button:before { 
+				top: -9px; 
+			}
+			.menu-button:after { 
+				top: 9px; 
+			}
+			
+			.menu-button, .menu-button:before, .menu-button:after { 
+				box-shadow: 1px 1px 10px rgba(0, 0, 0, .3)
+			} 
+			
+			#menu:checked + label .menu-button{ 
+				background-color: rgba(0, 0, 0, 0); box-shadow: none;
+			}
+			
+			#menu:checked + label .menu-button:before{ 
+				transform: rotate(45deg); top: 0px;
+			}
+			
+			#menu:checked + label .menu-button:after{ 
+				transform: rotate(135deg); top: 0
+			}
+
+			.topo {
+				transition: all 500ms ease;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background: $cor-grafite;
+                z-index: 999;
+				height: 45px;
+				border-radius: 0;
+				padding: 0;
+				.container {
+					justify-content: flex-start;
+					align-items: center;
+				}
+				.menu_geral {
+					.menu_info {
+						.menu_links {
+							position: fixed;
+							//box-shadow: 2px 10px 25px $cor-preta;
+							top: 45px;
+							left: -100%;
+							width: 37%;
+							height: calc(100% - 45px);
+							z-index: 1;
+							display: flex;
+							justify-content: flex-end;
+							-webkit-transition: 0.5s ease-out;
+							-moz-transition: 0.5s ease-out;
+							-o-transition: 0.5s ease-out;
+							transition: 0.5s ease-out;
+							transition: all 500ms ease;
+							.menu-menu-principal-container {
+								width: 100%;
+								z-index: 9999999999;
+								background: $cor-grafite;
+								.menu {
+									display: flex;
+									width: 100%;
+									flex-wrap: wrap;
+									.menu-item {
+										width: 100%;
+										padding: 11px !important;
+										a {
+											text-align: start !important;
+											font-size: 17px !important; 
+										}
+									}
+									.bloco {
+										display: flex !important;
+										margin-top: 25px;
+									}
+								}
+							}
+						}
+					}
+					
+				}
+			}
+            .topo input#menu:checked ~ .menu_geral .menu_links {
+				left: 0%;
+            }
+			
+			/*Rodapé*/
+            .footer{
+				text-align: center;
+			}
+			main.home {
+				.banner {
+					height: auto;
+					.img-wp {
+						height: 450px;
+					}
+					.gif {
+						top: 300px;
+						left: 110px;
+						height: 150px;
+					}
+			
+					.icone-chave {
+						right: 244px;
+						font-size: 200px;
+						-webkit-animation: aberturaChave1M 1s ease-in-out;
+						-moz-animation: aberturaChave1M 1s ease-in-out;
+						-o-animation: aberturaChave1M 1s ease-in-out;
+						animation: aberturaChave1M 1s ease-in-out;
+						top: 80px;
+					}
+					.icone-chave2 {
+						right: 10px;
+						font-size: 200px;
+						-webkit-animation: aberturaChave2M 1s ease-in-out;
+						-moz-animation: aberturaChave2M 1s ease-in-out;
+						-o-animation: aberturaChave2M 1s ease-in-out;
+						animation: aberturaChave2M 1s ease-in-out;
+						top: 80px;
+					}
+			
+					.conteudo-wp {
+						right: 63px;
+    					width: 200px;
+						top: 150px;
+						.titulo {
+							font-size: 30px !important;
+							line-height: 30px;
+						}
+						.subtitulo {
+							font-size: 25px !important;
+							line-height: 30px;
+						}
+					}
+				}
+
+				.about-me {
+					.container {
+						.titulo1 {
+
+						}
+						.conteudo-wp {
+							p {
+
+							}
+						}
+						.imagem {
+							margin: 0 0 10px 0;
+							top: 0;
+						}
+					}
+				}
+
+				.skills {
+					.container {
+						.conteudo-wp {
+							p {
+
+							}
+						}	
+						.grafico {
+							.info {
+								margin-left: 0;
+							}
+						}
+					}
+				}
+
+				.portfolio {
+					.recent-works {
+						padding: 0px 0;
+						.bloco {
+							width: 45%;
+							.img-wp {
+								span {
+									button {
+										font-size: 15px;
+										height: 25px;
+										width: 85px;
+									}
+								}
+								&:hover span {
+									p {
+										font-size: 14px;
+										strong {
+											font-size: 14px;
+    										margin: 12px 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				.curiosidades {
+					.container {
+						.conteudo-wp2 {
+							padding-left: 0;
+							.bloco {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			}
+			
+
+			
+        }
+    }
+}
+
+@-webkit-keyframes aberturaChave1M {
+    0% { right: 164px; }
+    100% { right: 244px; } 
+}
+@-moz-keyframes aberturaChave1M {
+    0% { right: 164px;}
+    100% { right: 244px; }
+}
+@-o-keyframes aberturaChave1M {
+    0% { right: 164px; }
+    100% { right: 244px; }
+}
+@keyframes aberturaChave1M {
+    0% { right: 164px; }
+    100% { right: 244px; }
+}
+
+@-webkit-keyframes aberturaChave2M {
+    0% { right: 90px; }
+    100% { right: 10px; } 
+}
+@-moz-keyframes aberturaChave2M {
+    0% { right: 90px;}
+    100% { right: 10px; }
+}
+@-o-keyframes aberturaChave2M {
+    0% { right: 90px; }
+    100% { right: 10px; }
+}
+@keyframes aberturaChave2M {
+    0% { right: 90px; }
+    100% { right: 10px; }
+}

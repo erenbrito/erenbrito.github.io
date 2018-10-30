@@ -1,0 +1,231 @@
+/****************************/
+/** Reset **/
+/****************************/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, .error-comment, h4, h5, h6, .panel-title, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    //font: inherit;
+	@include font1-light();
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, section, main {
+    display: block;
+}
+
+body {
+	line-height: 1;
+	background: $cor-fundo;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a:hover, a:active {
+    outline: 0;
+}
+
+button:focus {
+    border: none;
+    outline: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: $cor-preta;
+}
+
+p {
+	line-height: 1.5rem;	
+}
+
+a:hover {
+    text-decoration: none;
+	color: $cor-preta;
+}
+
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+.force-UTF-8 {
+    content: "ยก";
+}
+
+dt {
+    font-family: 'Helvetica';
+}
+
+code {
+    background: transparent;
+}
+
+::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
+// ----------------------
+// General
+// ----------------------
+*, *:before, *:after {
+    @include box-sizing();
+}
+
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+img, object, embed, video, iframe, iframe[style] {
+	max-width: 100%;
+	height: auto;
+}
+
+#formulario {
+	background-color: $cor-cinza-17;
+	
+	.img-orcamento {
+		height: 400px;
+		background-position: center;
+		background-size: cover;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		h1 {
+			@include font1-bold();
+			color: $cor-branca;
+			text-transform: uppercase;
+			font-size: 2.3rem;
+		}
+	}
+	
+	.wpcf7 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	form {
+		width: 80%;
+		margin-top: 2rem;
+		
+		input, textarea {
+			background: transparent;
+			margin-bottom: .6rem;
+			border: 2px solid $cor-branca;
+			width: 100%;
+			@include font1-light();
+			color: $cor-branca;
+			transition: background .5s;
+			padding: 5px;
+			
+			&::-webkit-input-placeholder {
+				color: $cor-branca;
+			}
+
+			&:-moz-placeholder { /* Firefox 18- */
+				color: $cor-branca;
+			}
+
+			&::-moz-placeholder {  /* Firefox 19+ */
+				color: $cor-branca;
+			}
+
+			&:-ms-input-placeholder {  
+				color: $cor-branca;
+			}
+			
+			&:focus {
+				outline: none;
+				background: #373737;
+			}
+		}
+		
+		textarea {
+			resize: none;
+			height: 100px;
+		}
+		
+		input[type="submit"] {
+			width: 35%;
+			background-color: $amarelo-1;
+			border-color: $amarelo-1;
+			color: $cor-preta;
+			@include font1-bold();
+			font-size: 1.3rem;
+			float: right;
+			transition: color .5s, background-color .5s;
+			
+			&:hover {
+				color: $amarelo-1;
+				background-color: transparent;
+			}
+		}
+		
+		.half {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			
+			span {
+				width: 48%;
+			}
+		}
+	}
+}
