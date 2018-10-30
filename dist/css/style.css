@@ -899,8 +899,10 @@ html body {
           html > body main.home .portfolio .recent-works .bloco .img-wp:hover span p strong {
             font-size: 14px;
             margin: 12px 0; }
+    html > body main.home .curiosidades .container .conteudo-wp P a {
+      font-size: 14px; }
     html > body main.home .curiosidades .container .conteudo-wp2 {
-      padding-left: 0; }
+      padding-left: 10px; }
       html > body main.home .curiosidades .container .conteudo-wp2 .bloco {
         font-size: 14px; } }
 

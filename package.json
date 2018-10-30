@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
-    "sass": "gulp sass"
+    "build:sass": "gulp sass",
+    "build:img": "gulp images"
   },
   "author": "Mariana Brito",
   "license": "ISC",
