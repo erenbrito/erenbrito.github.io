@@ -240,20 +240,38 @@ html {
 							width: 45%;
 							.img-wp {
 								span {
+									position: absolute;
+									background: $cor-amarela;
+									width: 100%;
+									height: 100%;
+									top: 0;
+									left: 0;
+									border-radius: 4%;
+									transition: all 500ms ease;
+									p {
+										color: $cor-fundo;
+										padding: 0 10px;
+										@include font1-italic;
+										font-size: 18px;
+										&:first-child {
+											font-weight: bold;
+										}
+										strong {
+											font-size: 20px;
+											margin: 20px 0;
+											@include font1-bold;
+										}
+									}
 									button {
+										display: inherit;
 										font-size: 15px;
 										height: 25px;
 										width: 85px;
-									}
-								}
-								&:hover span {
-									p {
-										font-size: 14px;
-										strong {
-											font-size: 14px;
-    										margin: 12px 0;
+										&:hover {
+											background: $cor-rosa;
 										}
 									}
+			
 								}
 							}
 						}
