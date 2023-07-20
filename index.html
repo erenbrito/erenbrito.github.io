@@ -1,592 +1,344 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="dist/css/html5reset.css">
-    <link rel="stylesheet" href="dist/css/swiper.min.css">
-    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,500,700">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="shortcut icon" type="image/png" href="https://erenbrito.github.io/dist/img/britoBlue.png"/>
-
-
-
-    <title>Eren Brito</title>
-    <meta name=”description” content="Olá, sou Eren Brito, Desenvolvedore Web." />
-    <meta property="og:title" content="Eren Brito - Desenvolvedore Web">
-    <meta property="og:site_name" content="Eren Brito - Desenvolvedora Web">
-    <meta property="og:description" content="Olá, sou Eren Brito, Desenvolvedore Web.">
-    <meta property="og:image" content="https://erenbrito.github.io/dist/img/capa.jpeg">
-    <meta property="og:image:type" content="jpeg">
-    <meta property="og:image:width" content="600">
-    <meta property="og:image:height" content="314">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://erenbrito.github.io/">
-    <meta name="theme-color" content="#465464">
-
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Steller landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Eren Brito - Web Developer</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="dist/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Steller main styles -->
+	<link rel="stylesheet" href="dist/css/steller.css">
 </head>
-<body class="fadeInd">
-    <header class="topo transparent">
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
         <div class="container">
+            <a class="navbar-brand" href="#"><img src="dist/imgs/logo.svg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <input id="menu" type="checkbox" />
-            <label for="menu" class="container-menu">
-                <div class="menu-button"></div>
-            </label>
-            <div class="logo">
-                <h1>Brito<span>.</span></h1>
-            </div>
-        	<nav class="menu_geral text-right">
-				<ul class="menu_info">
-				<div class="menu_links">
-                    <div class="menu-menu-principal-container" id="menu-menu-principal-container">
-                        <ul class="menu">
-                            <li class="menu-item ativo">
-                                <a href="#home" class="active">Home</a>
-                            </li>
-                            <li class="menu-item ativo">
-                                <a href="#sobre-mim">Sobre Mim</a>
-                            </li>
-                            <li class="menu-item ativo">
-                                <a href="#habilidades">Habilidades</a>
-                            </li>
-                            <li class="menu-item ativo">
-                                <a href="#portfolio">Portfólio</a>
-                            </li>
-                            <!--<li class="menu-item ativo">
-                                <a href="https://medium.com/@marianabriito" target="_blank">Blog</a>
-                            </li>-->
-                            <div class="bloco">
-                            <li class="menu-item">
-                                <a href="https://github.com/erenbrito" target="_blank" class="icon"><i class="fab fa-github-alt"></i></a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="https://codepen.io/erenbrito" target="_blank" class="icon"><i class="fab fa-codepen"></i></a>
-                            </li>
-                            </div>
-                        </ul>
-                    </div>  
-				</div>  
-            </nav>
-
-        </div>
-
-    </header>
-
-    <main class="home">
-        <section class="banner fadeIn" id="home">	
-            <div class="img-wp" style="background-image: url(dist/img/capa.png);">
-            
-            </div>
-                <img src="dist/img/brito.gif" alt="" class="gif">
-                <span class="icone-chave">{</span>
-                <div class="conteudo-wp texto-banner">
-                    <h1 class="titulo" data-texto="Hello I'm <strong>Brito</strong>"></h1>
-                    <h2 class="subtitulo" data-texto="And I'm a front-end developer."></h1>
-                </div>
-                <span class="icone-chave2">}</span>
-        </section>
-
-        <section class="about-me" id="sobre-mim">
-            <div class="bg-skew"></div>
-            <div class="container">
-                <h1 class="titulo1">Sobre Brito</h1>
-                <div class="row">
-                    <div class="conteudo-wp col-md-7">
-                        <p>Atualmente trabalho como front-end freelancer.</p>
-
-                        <p>Na útima empresa atuei como Coordenador de Tecnologia, gerenciando tarefas, distribuindo, priorizando, estimando esforço / prazo para múltiplos projetos usando Jira e Microsoft Teams.</p>
-
-                        <p>Realiza entrevistas com candidatos para cargos de desenvolvedores como Frontend, Backend e Estagiário.</p>
-
-                        <p>Documentação das demandas do cliente entre a Equipe de Atendimento ao Cliente e os Desenvolvedores.</p>
-
-                        <p>Durante minha jornada como desenvolvedor desenvolvi e mantive páginas responsivas usando Typescript, HTML Handlebars e Sass, utilizando CMS como Wordpress, Vignette e Acquia. Autogerenciamento de tarefas usando Jira e Microsoft Teams. Controle de versão Git com Bitbucket.</p>
-
-                        <p>Componentização de seções comuns na página, para reutilizar código, diminuindo duplicações em algumas páginas.</p>
-
-                        <p>Desenvolvi sites responsivos, landing pages e e-commerces usando PHP, WordPress, HTML, CSS (Sass), javascript (jQuery) e alguns plugins WordPress como WooCommerce, ACF e Learn Press. Autogerenciamento de tarefas usando Trello. Controle de versão Git com Bitbucket.</p>
-                        
-                    </div>
-                    <div class="imagem col-md-4">
-                        <div class="img-wp" style="background-image: url(dist/img/eu.jpeg);"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="skills" id="habilidades">
-            <div class="container">
-                <h1 class="titulo1">Minhas Skills</h1>
-                <div class="row">
-                    <div class="conteudo-wp col-md-5">
-                        <p>
-                            Essas são as minhas habilidades em Desenvolvimento Web, tudo o que aprendi ou estou estudando.
-                        </p>
-                    </div>
-                    <div class="grafico col-md-7">
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/html.png" alt="HTML5">
-                                <p class="texto">HTML5</p>
-                            </div>
-                            <div class="numero"><span class="counter">80</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 80%"></a></span>
-                        </div>
-    
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/css.png" alt="CSS">
-                                <p class="texto">CSS</p>
-                            </div>
-                            <div class="numero"><span class="counter">80</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 80%"></a></span>
-                        </div>
-    
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/js.png" alt="JavaScript">
-                                <p class="texto">JavaScript</p>
-                            </div>
-                            <div class="numero"><span class="counter">50</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 50%"></a></span>
-                        </div>
-
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/react.png" alt="JavaScript">
-                                <p class="texto">React.js</p>
-                            </div>
-                            <div class="numero"><span class="counter">20</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 20%"></a></span>
-                        </div>
-
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/jq.png" alt="jQuery">
-                                <p class="texto">jQuery</p>
-                            </div>
-                            <div class="numero"><span class="counter">50</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 50%"></a></span>
-                        </div>
-
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/sass.png" alt="Sass">
-                                <p class="texto">Sass</p>
-                            </div>
-                            <div class="numero"><span class="counter">80</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 80%"></a></span>
-                        </div>
-
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/gulp.png" alt="Gulp">
-                                <p class="texto">Gulp</p>
-                            </div>
-                            <div class="numero"><span class="counter">20</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 20%"></a></span>
-                        </div>
-
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/boot.png" alt="Bootstrap">
-                                <p class="texto">Bootstrap</p>
-                            </div>
-                            <div class="numero"><span class="counter">30</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 30%"></a></span>
-                        </div>
-
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/wordpress.png" alt="WordPress">
-                                <p class="texto">WordPress</p>
-                            </div>
-                            <div class="numero"><span class="counter">80</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 80%"></a></span>
-                        </div>
-
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/php.png" alt="PHP">
-                                <p class="texto">PHP</p>
-                            </div>
-                            <div class="numero"><span class="counter">60</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 60%"></a></span>
-                        </div>
-
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/docker.png" alt="Docker">
-                                <p class="texto">Docker</p>
-                            </div>
-                            <div class="numero"><span class="counter">10</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 10%"></a></span>
-                        </div>
-    
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/responsive.png" alt="Responsive Design">
-                                <p class="texto">Responsive Design</p>
-                            </div>
-                            <div class="numero"><span class="counter">70</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 70%"></a></span>
-                        </div>
-
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/git.png" alt="Git">
-                                <p class="texto">Git</p>
-                            </div>
-                            <div class="numero"><span class="counter">60</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 60%"></a></span>
-                        </div>
-    
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/ps.png" alt="Photoshop">
-                                <p class="texto">Photoshop</p>
-                            </div>
-                            <div class="numero"><span class="counter">40</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 40%"></a></span>
-                        </div>
-    
-                        <div class="info bloco-skills1">
-                            <div class="bloco-skills">
-                                <img class="icone" src="dist/img/xd.png" alt="Adobe XD">
-                                <p class="texto">Adobe XD</p>
-                            </div>
-                            <div class="numero"><span class="counter">40</span><span class="porcentagem">%</span></div>
-                            <span class="bloco"><a class="contador inativo" style="width: 40%"></a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
-
-        <section class="portfolio" id="portfolio">
-            <div class="container">
-                <h1 class="titulo1">Portfólio</h1>
-
-                <div class="conteudo-wp">
-                    <p>
-                        Alguns projetos que eu já realizei até aqui.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="recent-works">
-
-                <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/creative.png);" alt="Creative Box Club">
-                        <span>
-                            <p>
-                                Creative Box Club
-                            </p>
-                            <P>
-                                Feito com Wordpress, atuei no Front-end.
-                            </P>
-                            <a target="_blank" href="https://carinasartor.com.br/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/confluentes.png);" alt="Confluentes">
-                        <span>
-                            <p>
-                                Confluentes
-                            </p>
-                            <P>
-                                Feito com Wordpress, atuei no Front-end e Back-end.
-                            </P>
-                            <a target="_blank" href="https://www.confluentes.org.br/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/studio.png);" alt="Studio Yes Fotografia">
-                        <span>
-                            <p>
-                                Studio Yes Fotografia
-                            </p>
-                            <P>
-                                Feito com Wordpress, atuei no Front-end e Back-end.
-                            </P>
-                            <a target="_blank" href="https://studioyes.com.br">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/summa.png);" alt="Summa Wellness">
-                        <span>
-                            <p>
-                                Summa Wellness
-                            </p>
-                            <P>
-                                Feito com Wordpress, atuei no Front-end e Back-end.
-                            </P>
-                            <a target="_blank" href="https://summalife.com/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/movies-list.png);" alt="Movies List">
-                        <span>
-                            <p>
-                                Movies List
-                            </p>
-                            <P>
-                                Feito com React.js e Sass, com base CRA e consumindo a API OMDb.
-                            </P>
-                            <a target="_blank" href="https://erenbrito.github.io/movies-list/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-
-                <!-- <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/greendigitalfranchise.png);" alt="Green Digital Franchise">
-                        <span>
-                            <p>
-                                Green Digital Franchise
-                            </p>
-                            <P>
-                                Feito com Wordpress, atuei no Front-end e Back-end.
-                            </P>
-                            <a target="_blank" href="https://greendigitalfranchise.com/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div> -->
-
-                <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/instituto.png);" alt="Instituto Peito Aberto">
-                        <span>
-                            <p>
-                                Instituto Peito Aberto
-                            </p>
-                            <P>
-                                Feito com Wordpress, atuei no Front-end e Back-end, possui Woocommerce.
-                            </P>
-                            <a target="_blank" href="http://peitoaberto.org.br/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-
-                <!-- <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/apae.png);" alt="APAE">
-                        <span>
-                            <p>APAE</p>
-                            <p>Feito com Wordpress, atuei no Front-end e Back-end.</p>
-                            <a target="_blank" href="http://apaecuritiba.org.br">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>  -->
-
-                <!-- <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/advb.png);" alt="ADVB PR">
-                        <span>
-                            <p>ADVB PR</p>
-                            <p>Feito com Wordpress, atuei no Front-end e Back-end.</p>
-                            <a target="_blank" href="https://greendigital.com.br/homologacao/advb/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div> -->
-
-                <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/lipatin.png);" alt="Lipatin Sports">
-                        <span>
-                            <p>Lipatin Sports</p>
-                            <p>Feito com Wordpress, atuei no Front-end e Back-end.</p>
-                            <a target="_blank" href="http://www.lipatinsports.com.br/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-
-                <!-- <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/gadens.png);" alt="Gadens Incorporadora">
-                        <span>
-                            <p>Gadens Incorporadora</p>
-                            <p>Feito com Wordpress, atuei no Front-end e Back-end.</p>
-                            <a target="_blank" href="http://www.gadens.com.br/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div> -->
-
-                <!-- <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/outdoor.png);" alt="Outdoormídia">
-                        <span>
-                            <p>Outdoormídia</p>
-                            <p>Feito com Wordpress, atuei no Front-end e Back-end.</p>
-                            <a target="_blank" href="http://outdoormidia.com.br/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div> -->
-
-                <!-- <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/advisors.png);" alt="Advisors">
-                        <span>
-                            <p>Advisors</p>
-                            <p>Feito com Wordpress, atuei no Front-end e Back-end.</p>
-                            <a target="_blank" href="http://homologacao.greendigital.com.br/advisors/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div> -->
-
-                <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/unity.png);" alt="Unity Empresas">
-                        <span>
-                            <p>Unity Empresas</p>
-                            <p>Atuei na adaptação do tema para dispositivos mobile, aplicando técnicas do Responsive Design.</p>
-                            <a target="_blank" href="http://unityempresas.com.br/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/salvamundi.png);" alt="Salvamundi">
-                        <span>
-                            <p>Salvamundi</p>
-                            <p>Feito com Wordpress, atuei no Front-end e Back-end.</p>
-                            <a target="_blank" href="http://salvamundi.com.br/novosite/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-
-                <!-- <div class="bloco bloco-portfolio">
-                    <div class="img-wp" style="background-image: url(dist/img/unique.png);" alt="Unique Consultoria">
-                        <span>
-                            <p>Unique Consultoria</p>
-                            <p>Feito com Wordpress, atuei no Front-end e parte Back-end.</p>
-                            <a target="_blank" href="http://uniqconsultoria.com.br/">
-                                <button>Visite o site</button>
-                            </a>
-                        </span>
-                    </div>
-                </div> -->
-            </div>
-        </section>
-
-       <!-- <section class="curiosidades">
-            <div class="container">
-                <h1 class="titulo1">Curiosidades</h1>
-                <div class="row">
-                    <div class="conteudo-wp col-md-6">
-                        <p>
-                            Sonho em mudar o mundo pra melhor e espalhar amor onde eu for, não sei de tudo, mas do pouco que sei tento passar adiante, já cursei um Técnico em Manutenção Automotiva e 2 períodos de Direito e quero conhecer mais um pouco de tudo o que eu conseguir, para saber mais um pouco veja meu <a href="https://medium.com/@marianabriito">blog.</a> 
-                        </p>
-                    </div>
-        
-                    <div class="conteudo-wp2 col-md-6">
-                        <div class="bloco bloco-curiosidades">
-                            Assisti 4 vezes as 10 temporadas de Smallville
-                        </div>
-    
-                        <div class="bloco bloco-curiosidades">
-                            Amo seriados
-                        </div>
-    
-                        <div class="bloco bloco-curiosidades">
-                            Amo comida
-                        </div>
-    
-                        <div class="bloco bloco-curiosidades">
-                            Gosto de dar nome de comida aos meu animais
-                        </div>
-    
-                        <div class="bloco bloco-curiosidades">
-                            Adoro sertanejo
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-    </main>	
-
-    <footer class="footer">
-        <div class="container">
-            <div class="bloco">
-                <div class="feito-por">
-                    <p class="texto">Feito com <i class="fas fa-heart" aria-label="love"></i> por Eren Brito - 2018</p>
-                </div>
-            </div>
-            <div class="footer-info">
-                <ul class="menu">
-                    <li class="menu-item">
-                        <a href="https://github.com/erenbrito" target="_blank" class="icon"><i class="fab fa-github-alt"></i></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
                     </li>
-                    <li class="menu-item">
-                        <a href="https://codepen.io/erenbrito" target="_blank" class="icon"><i class="fab fa-codepen"></i></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
                     </li>
-                    <!-- <li class="menu-item">
-                        <a href="https://twitter.com/briitomari" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
-                    </li> -->
-                    <li class="menu-item">
-                        <a href="https://linkedin.com/in/britosouza" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
-                    </li>
-                    <!--<li class="menu-item">
-                        <a href="https://www.facebook.com/briitomari" target="_blank" class="icon"><i class="fab fa-facebook-square"></i></a>
-                    </li>-->
-                    <!--<li class="menu-item">
-                        <a href="https://www.instagram.com/apenas.brito/" target="_blank" class="icon"><i class="fab fa-instagram"></i></a>
-                    </li>-->
-                    <li class="menu-item">
-                        <a href="mailto:britousouza@gmail.com" target="_blank" class="icon"><i class="fas fa-envelope"></i></a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#service">Service</a>
+                    </li>                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
                     </li>
                 </ul>
             </div>
+        </div>          
+    </nav>
+    <!-- End of page navibation -->
+
+    <!-- Page Header -->
+    <header class="header" id="home">
+        <div class="container">
+            <div class="infos">
+                <h6 class="subtitle">hello,I'm</h6>
+                <h6 class="title">Eren Brito</h6>
+                <p>Web Developer</p>
+
+                <div class="buttons pt-3">
+                    <a target="_blank" class="btn btn-dark rounded" href="dist/pdf/ErenBrito-Resume.pdf" download title="DOWNLOAD CV">DOWNLOAD CV</a>
+                </div>      
+
+                <div class="socials mt-4">
+                    <a target="_blank" class="social-item" href="https://www.facebook.com/erenbritosouza"><i class="ti-facebook"></i></a>
+                    <a target="_blank" class="social-item" href="https://github.com/erenbrito"><i class="ti-github"></i></a>
+                </div>
+            </div>              
+            <div class="img-holder">
+                <img src="dist/imgs/avatar.svg" alt="">
+            </div>      
+        </div>  
+    </header>
+    <!-- End of Page Header -->
+    
+    <!-- About section -->
+    <section id="about" class="section mt-3">
+        <div class="container mt-5">
+            <div class="row text-center text-md-left">
+                <div class="col-md-3">
+                    <img src="dist/imgs/avatar.jpeg" alt="" class="img-thumbnail mb-4">
+                </div>
+                <div class="pl-md-4 col-md-9">
+                    <h6 class="title">Eren Brito</h6>
+                    <p class="subtitle">Web Developer</p>
+                    <p>I currently work as a freelance front-end.</p>
+                    <p>In the last company I worked as Technology Coordinator, managing tasks, distributing, prioritizing, estimating effort / deadline for multiple projects using Jira and Microsoft Teams.</p>
+                    <p>Conducted interviews with candidates for developer positions such as Frontend, Backend and Intern.</p>
+                    <p>Documentation of customer demands between the Customer Service Team and Developers.</p>
+                    <p>During my journey as a developer I developed and maintained responsive pages using Typescript, HTML Handlebars and Sass, using CMS like Wordpress, Vignette and Acquia. Task self-management using Jira and Microsoft Teams. Git version control with Bitbucket.</p>
+                    <p>Componentization of common sections on the page, to reuse code, reducing duplication in some pages.</p>
+                    <p>I developed responsive websites, landing pages and e-commerces using PHP, WordPress, HTML, CSS (Sass), javascript (jQuery) and some WordPress plugins like WooCommerce, ACF and Learn Press. Task self-management using Trello. Git version control with Bitbucket.</p>
+                    <a target="_blank" class="btn btn-primary rounded mt-3" href="dist/pdf/ErenBrito-Resume.pdf" download title="DOWNLOAD CV">DOWNLOAD CV</a>             
+                </div>
+            </div>
         </div>
-    </footer>
+    </section>
+
+    <!-- Service section -->
+    <section id="service" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Service</h6>
+            <h6 class="section-title mb-4">What I Do</h6>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="icon ti-desktop"></i>
+                            <h5>Web Development</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="icon ti-mobile"></i>
+                            <h5>Responsive Design</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 mb-4">
+                    <div class="custom-card card border">
+                        <div class="card-body">
+                            <i class="icon ti-bar-chart"></i>
+                            <h5>SEO Optimization</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End of Sectoin -->
+
+    <!-- Skills section -->
+    <section class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Skills</h6>
+            <h6 class="section-title mb-4">Why Choose me</h6>
+            <p class="mb-5 pb-4">Commitment to delivery, quality and communication is key.</p>
+
+            <div class="row text-left">
+                <div class="col-sm-6">
+                    <h6 class="mb-3">HMTL5</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">CSS</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Sass</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Gulp</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Bootstrap</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">JavaScript</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">jQuery</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">React.js</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>89%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">WordPress</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 83%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>83%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">PHP</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>95%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Docker</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Git</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Photoshop</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Adobe XD</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">Figma</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <h6 class="mb-3">MySQL</h6>
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </section>
+    <!-- End of Skills sections -->
+
+    <!-- Portfolio section -->
+    <section id="portfolio" class="section">
+        <div class="container text-center">
+            <h6 class="subtitle">Portfolio</h6>
+            <h6 class="section-title mb-4">Check My Wonderful Works</h6>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="dist/imgs/folio-1.png" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Muevy</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="https://www.muevy.com"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="dist/imgs/folio-2.png" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Fabrício Fudissaku</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="https://fabriciofudissaku.com"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="dist/imgs/folio-3.png" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Data-Crush</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="https://datacrush.com.br"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="dist/imgs/folio-4.png" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Boa Ideia no ar</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="https://boaideianoar.com.br"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-wrapper">
+                        <img src="dist/imgs/folio-5.png" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Carina Sartor</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="https://peitoaberto.org.br"><i class="ti-link"></i></a>
+                            </div>  
+                        </div>
+                    </div>
+                    <div class="img-wrapper">
+                        <img src="dist/imgs/folio-6.png" alt="">
+                        <div class="overlay">
+                            <div class="overlay-infos">
+                                <h5>Movies List</h5>
+                                <a href="javascript:void(0)"><i class="ti-zoom-in"></i></a>
+                                <a href="https://erenbrito.github.io/movies-list"><i class="ti-link"></i></a>
+                            </div>                              
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End of portfolio section -->
+
+
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <p>Copyright <script>document.write(new Date().getFullYear())</script> &copy;
+                </div>
+                <div class="col-sm-6">
+                    <div class="socials">
+                        <a target="_blank" class="social-item" href="https://github.com/erenbrito"><i class="ti-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> 
+    <!-- End of page footer -->
+	
+	<!-- core  -->
+    <script src="dist/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="dist/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+	<script src="dist/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- steller js -->
+    <script src="dist/js/steller.js"></script>
 
 </body>
-<script type="text/javascript" src="dist/js/vendor/jquery.min.js"></script>
-<script type="text/javascript" src="dist/js/vendor/bootstrap.min.js"></script>
-<script type="text/javascript" src="dist/js/vendor/jquery.counterup.min.js"></script>
-<script type="text/javascript" src="dist/js/vendor/typed.min.js"></script>
-<script type="text/javascript" src="dist/js/vendor/highlight.pack.js"></script>
-<script type="text/javascript" src="dist/js/vendor/jquery.mask.min.js"></script>
-<script type="text/javascript" src="dist/js/vendor/jquery.nicescroll.min.js"></script>
-<script type="text/javascript" src="dist/js/vendor/jquery.validate.min.js"></script>
-<script type="text/javascript" src="dist/js/vendor/scrollmagic.min.js"></script>
-<script type="text/javascript" src="dist/js/vendor/scrollreveal.min.js"></script>
-<script type="text/javascript" src="dist/js/vendor/animation.gsap.min.js"></script>
-<script type="text/javascript" src="dist/js/vendor/animation.velocity.min.js"></script>
-<script type="text/javascript" src="dist/js/vendor/waypoints.min.js"></script>
-<script type="text/javascript" src="dist/js/scripts.js"></script>
 </html>
