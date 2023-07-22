@@ -983,9 +983,6 @@
 .ti-github:before {
 	content: "\e73f";
 }
-.ti-codepen:before {
-	content: "\f1cb";
-}
 .ti-flickr:before {
 	content: "\e740";
 }
